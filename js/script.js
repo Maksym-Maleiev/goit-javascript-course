@@ -113,3 +113,29 @@ const x = 10;
 const y = 5;
 
 console.log(x + y);
+
+console.log(x - y);
+
+console.log(x * y);
+
+console.log(x / y);
+
+console.log(x % y);
+
+let value = 5;
+
+value += 10;
+console.log(value);
+
+const h = 5;
+const i = 10;
+const j = 5;
+
+console.log("h > i:", h > i); 
+console.log("h < i:", h < i);
+console.log("h < j:", h < j); 
+console.log("h <= j:", h <= j);
+console.log("h === i:", h === i); 
+console.log("h === j:", h === j);
+console.log("h !== i:", h !== i);
+console.log("h !== j:", h !== j);
