@@ -1,1 +1,1 @@
-# goit-javascript-course
+# 1. variables and types
