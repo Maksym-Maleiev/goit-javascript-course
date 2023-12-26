@@ -92,12 +92,24 @@ const alertMessage = "JavaScript is awesome!";
 // alert(alertMessage);
 
 // confirm() and prompt()
+/*
 const isComing = confirm("Please confirm hotel reservation");
 console.log(isComing);
+*/
 
+/*
 const hotelName = prompt("Please enter desired hotel name");
 console.log(hotelName);
+*/
 
+/*
 const value = prompt("Please enter a number!");
 console.log(typeof value);
 console.log(value);
+*/
+
+// Math operator
+const x = 10;
+const y = 5;
+
+console.log(x + y);
