@@ -29,3 +29,54 @@ console.log(username);
 let myAge = 30;
 myAge = 25;
 console.log(myAge);
+
+// Numbers
+const numberChild = 1;
+console.log(numberChild);
+
+const points = 15.8;
+console.log(points);
+
+// String
+const userName = "Max";
+console.log(userName);
+
+const description = "JavaSript for beginners";
+console.log(description);
+
+// Boolean
+const isLoggedIn = true;
+console.log(isLoggedIn);
+
+const canMerge = false;
+console.log(canMerge);
+
+const hasChildren = true;
+console.log(hasChildren);
+
+const isModalOpen = false;
+console.log(isModalOpen);
+
+// Null
+let selectedProduct = null;
+console.log(selectedProduct);
+
+// Underfined
+let firstName;
+console.log(firstName);
+
+// typeOf
+let secondName;
+console.log(typeof secondName); // "undefined"
+
+let inputValue = null;
+console.log(typeof inputValue); // "object"
+
+const quantity = 17;
+console.log(typeof quantity); // "number"
+
+const message = "JavaScript is awesome!";
+console.log(typeof message); // "string"
+
+const isSidebarOpen = false;
+console.log(typeof isSidebarOpen); // "boolean"
