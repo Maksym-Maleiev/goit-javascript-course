@@ -80,3 +80,24 @@ console.log(typeof message); // "string"
 
 const isSidebarOpen = false;
 console.log(typeof isSidebarOpen); // "boolean"
+
+// console.log() and alert()
+const myMessage = 'JavaScript is awesome';
+console.log(message);
+
+const myName = "Max";
+console.log("Username is ", myName);
+
+const alertMessage = "JavaScript is awesome!";
+// alert(alertMessage);
+
+// confirm() and prompt()
+const isComing = confirm("Please confirm hotel reservation");
+console.log(isComing);
+
+const hotelName = prompt("Please enter desired hotel name");
+console.log(hotelName);
+
+const value = prompt("Please enter a number!");
+console.log(typeof value);
+console.log(value);
