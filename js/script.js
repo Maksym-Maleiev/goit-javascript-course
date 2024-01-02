@@ -225,3 +225,40 @@ console.log(newMessage); // Max is happy
 console.log(1 + "2"); // "12"
 console.log(1 + "2" + 4); // "124"
 console.log(1 + 2 + "4"); // "34"
+
+/*
+const guestName = "Max";
+const roomNumber = 207;
+const greeting = "Welcome " + guestName + ", your room number is " + roomNumber + "!"; 
+console.log(greeting);
+*/
+// "Welcome Mango, your room number is 207!"
+
+const guestName = "Max";
+const roomNumber = 207;
+const greeting = `Welcome ${guestName}, your room number is ${roomNumber}!`; 
+console.log(greeting); // "Welcome Mango, your room number is 207!"
+
+// Length
+const firstMessage = "Welcome to Bahamas!";
+console.log(firstMessage.length); // 19
+console.log("There is nothing impossible to him who will try".length); // 47
+
+// toLowerCase() and toUpperCase()
+
+const secondMessage = "Welcome to Bahamas!";
+console.log(secondMessage.toLowerCase()); // "welcome to bahamas!"
+console.log(secondMessage.toUpperCase()); // "WELCOME TO BAHAMAS!"
+console.log(secondMessage); // "Welcome to Bahamas!"
+
+console.log("saMsUng" === "samsung"); // false
+console.log("saMsUng" === "SAMSUNG"); // false
+
+const BRAND_NAME = "SAMSUNG";
+const userInput = "saMsUng";
+const normalizedToUpperCaseInput = userInput.toUpperCase();
+
+console.log(userInput); // 'saMsUng'
+console.log(userInput === BRAND_NAME); // false
+console.log(normalizedToUpperCaseInput); // 'SAMSUNG'
+console.log(normalizedToUpperCaseInput === BRAND_NAME); // true
