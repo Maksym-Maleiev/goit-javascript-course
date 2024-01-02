@@ -306,3 +306,50 @@ console.log(newProductName.slice(0, newProductName.length)); // "Repair droid"
 console.log(newProductName.slice(7, newProductName.length)); // "droid"
 
 // LOGICAL OPERATORS
+
+// &&
+const years = 20;
+console.log(years > 10 && years < 30); // true && true -> true
+
+const newYears = 50;
+console.log(newYears > 10 && newYears < 30); // true && false -> false
+console.log(newYears > 80 && newYears < 120); // false && true -> false
+
+console.log(1 && 5); // true && true -> 5
+console.log(5 && 1); // true && true -> 1
+console.log(0 && 2); // false && true -> 0
+console.log(2 && 0); // true && false -> 0
+console.log("" && "Mango"); // false && true -> ""
+console.log("Mango" && ""); // true && false -> ""
+console.log("Mango" && "Poly"); // true && true -> "Poly"
+console.log("Poly" && "Mango"); // true && true -> "Mango"
+
+// ||
+const myYears = 5;
+console.log(myYears < 10 || myYears > 30); // true || false -> true
+
+const secondYears = 40;
+console.log(secondYears < 10 || secondYears > 30); // false || true -> true
+
+const thirdYears = 20;
+console.log(thirdYears < 10 || thirdYears > 30); // false || false -> false
+
+console.log(true || false); // true
+console.log(false || true); // true
+console.log(true || true); // true
+
+console.log(3 || false); // 3
+console.log(false || 3); // 3
+console.log(3 || true); // 3
+console.log(true || 3); // true
+
+// !
+console.log(!true); // false
+console.log(!false); // true
+console.log(!3); // !3 -> !true -> false
+console.log(!"Mango"); // !"Mango" -> !true -> false
+console.log(!0); // !0 -> !false -> true
+console.log(!""); // !"" -> !false -> true
+
+const isOnline = true;
+const isNotOnline = !isOnline; // !isOnline -> !true -> false
