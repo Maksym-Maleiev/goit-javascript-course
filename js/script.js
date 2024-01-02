@@ -181,3 +181,38 @@ console.log(Number.isNaN(validNumber)); // false
 
 const invalidNumber = Number("qweqwe"); // NaN
 console.log(Number.isNaN(invalidNumber)); // true
+
+// Floating point addition
+console.log(0.1 + 0.2 === 0.3); // false
+console.log(0.1 + 0.2); // 0.30000000000000004
+
+console.log(0.17 + 0.24); // 0.41000000000000003
+console.log((0.17 * 100 + 0.24 * 100) / 100); // 0.41
+
+console.log(0.17 + 0.24); // 0.41000000000000003
+console.log((0.17 + 0.24).toFixed(2)); // 0.41
+
+// Math
+
+// Math.floor(num)
+console.log(Math.floor(1.7)); // 1
+
+// Math.ceil(num)
+console.log(Math.ceil(1.2)); // 2
+
+// Math.round(num)
+console.log(Math.round(1.2)); // 1
+console.log(Math.round(1.5)); // 2
+
+// Math.max(num1, num2, ...)
+console.log(Math.max(20, 10, 50, 40)); // 50
+
+// Math.min(num1, num2, ...)
+console.log(Math.min(20, 10, 50, 40)); // 10
+
+// Math.pow(base, exponent)
+console.log(Math.pow(2, 4)); // 16
+
+// Math.random()
+console.log(Math.random()); // random numbers between 0 and 1
+console.log(Math.random() * (10 - 1) + 1); // random numbers between 1 and 10
