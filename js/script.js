@@ -154,7 +154,7 @@ console.log(5 !== 5);
 console.log(1 === true); 
 console.log(1 !== true);
 
-// Number()
+// Number(val)
 const valueA = "5";
 console.log(Number(valueA)); // 5
 console.log(typeof Number(valueA)); // "number"
@@ -163,14 +163,21 @@ const valueB = "random string";
 console.log(Number(valueB)); // NaN
 console.log(typeof Number(valueB)); // "number"
 
-// Number.parseInt()
+// Number.parseInt(val)
 console.log(Number.parseInt("5px")); // 5
 console.log(Number.parseInt("12qwe74")); // 12
 console.log(Number.parseInt("12.46qwe79")); // 12
 console.log(Number.parseInt("qweqwe")); // NaN
 
-// Number.parseFloat()
+// Number.parseFloat(val)
 console.log(Number.parseFloat("5px")); // 5
 console.log(Number.parseFloat("12qwe74")); // 12
 console.log(Number.parseFloat("12.46qwe79")); // 12.46
 console.log(Number.parseFloat("qweqwe")); // NaN
+
+// Number.isNaN(val)
+const validNumber = Number("51"); // 51
+console.log(Number.isNaN(validNumber)); // false
+
+const invalidNumber = Number("qweqwe"); // NaN
+console.log(Number.isNaN(invalidNumber)); // true
