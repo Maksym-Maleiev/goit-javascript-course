@@ -216,3 +216,12 @@ console.log(Math.pow(2, 4)); // 16
 // Math.random()
 console.log(Math.random()); // random numbers between 0 and 1
 console.log(Math.random() * (10 - 1) + 1); // random numbers between 1 and 10
+
+// STRING
+
+const newMessage = "Max " + "is" + " happy";
+console.log(newMessage); // Max is happy
+
+console.log(1 + "2"); // "12"
+console.log(1 + "2" + 4); // "124"
+console.log(1 + 2 + "4"); // "34"
