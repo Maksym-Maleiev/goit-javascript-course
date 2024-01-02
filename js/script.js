@@ -139,3 +139,17 @@ console.log("h === i:", h === i);
 console.log("h === j:", h === j);
 console.log("h !== i:", h !== i);
 console.log("h !== j:", h !== j);
+
+// ❌ Bad
+console.log(5 == "5");
+console.log(5 != "5"); 
+console.log(1 == true);
+console.log(1 != true); 
+
+// ✅ Good
+console.log(5 === "5");
+console.log(5 === 5);
+console.log(5 !== "5");
+console.log(5 !== 5); 
+console.log(1 === true); 
+console.log(1 !== true);
