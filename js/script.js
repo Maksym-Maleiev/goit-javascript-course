@@ -262,3 +262,47 @@ console.log(userInput); // 'saMsUng'
 console.log(userInput === BRAND_NAME); // false
 console.log(normalizedToUpperCaseInput); // 'SAMSUNG'
 console.log(normalizedToUpperCaseInput === BRAND_NAME); // true
+
+// indexOf()
+const thirdMessage = "Welcome to Bahamas!";
+console.log(thirdMessage.indexOf("to")); // 8
+console.log(thirdMessage.indexOf("hello")); // -1
+
+// includes()
+
+const productName = "Repair droid";
+
+console.log(productName.includes("p")); // true
+console.log(productName.includes("P")); // false
+console.log(productName.includes("droid")); // true
+console.log(productName.includes("Droid")); // false
+console.log(productName.includes("Repair")); // true
+console.log(productName.includes("repair")); // false
+
+// endsWith()
+
+const jsFileName = "script.js";
+console.log(jsFileName.endsWith(".js")); // true
+
+const cssFileName = "styles.css";
+console.log(cssFileName.endsWith(".js")); // false
+
+// replace() and replaceAll()
+
+const jsNewFileName = "script.js";
+const minifiedJsFileName = jsNewFileName.replace(".js", ".min.js");
+console.log(minifiedJsFileName); // "script.min.js"
+
+const cssNewFileNames = "styles.css, about.css, portfolio.css";
+const minifiedCssFileNames = cssNewFileNames.replaceAll(".css", ".min.css");
+console.log(minifiedCssFileNames); // "styles.min.css, about.min.css, portfolio.min.css"
+
+// slice()
+
+const newProductName = "Repair droid";
+console.log(newProductName.slice(0, 4)); // "Repa"
+console.log(newProductName.slice(3, 9)); // "air dr"
+console.log(newProductName.slice(0, newProductName.length)); // "Repair droid"
+console.log(newProductName.slice(7, newProductName.length)); // "droid"
+
+// LOGICAL OPERATORS
