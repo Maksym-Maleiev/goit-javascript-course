@@ -46,4 +46,50 @@ console.log(ascendingSco);
 
 const scor = [61, 19, 74, 35, 92, 56];
 const descendingScor = [...scor].sort((a, b) => b - a);
-console.log(descendingScor); // [92, 74, 61, 56, 35, 19]
+console.log(descendingScor);
+// [92, 74, 61, 56, 35, 19]
+
+/*
+ * Custom row sort order
+ */
+
+'a'.localeCompare('b'); // -1
+'b'.localeCompare('a'); // 1
+'a'.localeCompare('a'); // 0
+'b'.localeCompare('b'); // 0
+
+const stud = ['Віка', 'Андрій', 'Олег', 'Юля', 'Борис', 'Катя'];
+
+const inAlphabetOrder = [...stud].sort((a, b) => a.localeCompare(b));
+console.log(inAlphabetOrder);
+// ['Андрій', 'Борис', 'Віка', 'Катя', 'Олег', 'Юля']
+
+const inReversedOrder = [...stud].sort((a, b) => b.localeCompare(a));
+console.log(inReversedOrder);
+// ['Юля', 'Олег', 'Катя', 'Віка', 'Борис', 'Андрій']
+
+/*
+ * Sorting objects
+ */
+
+const studen = [
+  { name: 'Манго', score: 83 },
+  { name: 'Полі', score: 59 },
+  { name: 'Аякс', score: 37 },
+  { name: 'Ківі', score: 94 },
+];
+
+const inAscendingScoreOrder = studen.sort(
+  (firstStudent, secondStudent) => firstStudent.score - secondStudent.score
+);
+console.log(inAscendingScoreOrder);
+
+const inDescendingScoreOrder = studen.sort(
+  (firstStudent, secondStudent) => secondStudent.score - firstStudent.score
+);
+console.log(inDescendingScoreOrder);
+
+const inAlphabeticalOrder = studen.sort((firstStudent, secondStudent) =>
+  firstStudent.name.localeCompare(secondStudent.name)
+);
+console.log(inAlphabeticalOrder);
